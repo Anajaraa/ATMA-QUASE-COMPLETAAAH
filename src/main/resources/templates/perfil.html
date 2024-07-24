@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/perfil.css">
+    <link rel="stylesheet" href="../static/css/root.css">
+</head>
+<body>
+    <header>
+        <div class="banner-top">
+            <img src="../static/img/BANNER2.jpg" alt="Banner Topo">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="http://localhost:8080">
+                <img src="../static/img/LOGO.png" alt="Atma Games" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../HTML/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/perfil.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/adm.html">Admin</a>
+                    </li>
+                </ul>
+                <form class="form-inline mr-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar jogos..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+                <!-- Novo ícone de usuário com dropdown -->
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="userMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="../static/img/default-profile.jpg" id="userIcon" alt="User Icon" style="width: 30px; height: 30px; border-radius: 50%;">
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="userMenu">
+                        <a class="dropdown-item" href="http://localhost:8080/perfil" id="profileLink">Perfil</a>
+                        <a class="dropdown-item" href="http://localhost:8080" id="logoutLink">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Perfil do Usuário</h1>
+        <div class="profile-container">
+            <div class="profile-img-container">
+                <img id="profileImage" src="../static/img/default-profile.jpg" alt="Imagem de Perfil" class="profile-img">
+                <input type="file" id="uploadImage" accept="image/*" style="display: none;">
+            </div>
+            <h2 id="welcomeMessage">Bem-vindo</h2>
+            <p>Email: <span id="userEmail">user@example.com</span></p>
+            <h3>Jogos Favoritos</h3>
+            <ul id="favoriteGames">
+                <!-- Jogos favoritos serão listados aqui -->
+            </ul>
+            <button id="addFavoriteGame">Adicionar Jogo Favorito</button>
+            <h3>Histórico de Compras</h3>
+            <ul id="purchaseHistory">
+                <!-- Histórico de compras será listado aqui -->
+            </ul>
+            <button id="editProfile">Editar Perfil</button>
+        </div>
+
+        <!-- Modal de Edição de Perfil -->
+        <div id="editProfileModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Editar Perfil</h2>
+                <form id="editProfileForm">
+                    <label for="nome-edicao">Nome:</label>
+                    <input type="text" id="nome-edicao" name="nome">
+                    <label for="email-edicao">Email:</label>
+                    <input type="email" id="email-edicao" name="email">
+                    <button type="submit">Salvar Alterações</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal para Adicionar Jogos Favoritos -->
+        <div id="addFavoriteGameModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Adicionar Jogo Favorito</h2>
+                <form id="addFavoriteGameForm">
+                    <label for="game-name">Nome do Jogo:</label>
+                    <input type="text" id="game-name" name="gameName">
+                    <button type="submit">Adicionar Jogo</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer id="footer" class="bg-dark text-white mt-5 p-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>Sobre</h5>
+              <p>CNPJ: 123.456.789/0001-00</p>
+              <p>Endereço: Av. Principal, 1234</p>
+              <p>Telefone: (11) 1234-5678</p>
+              <p>Email: contato@atma.com</p>
+              <p>WhatsApp: (11) 98765-4321</p>
+            </div>
+            <div class="col-md-4">
+              <h5>Redes Sociais</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Facebook</a></li>
+                <li><a href="#" class="text-white">Instagram</a></li>
+                <li><a href="#" class="text-white">Twitter</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5>Empresa Parceira</h5>
+              <p>Turnover RH</p>
+              <p>Telefone: (11) 1111-2222</p>
+              <p>Email: rh@turnover.com</p>
+              <img src="../static/img/logo_Turnover_branco.png" alt="Logo Turnover" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../static/javascript/perfil.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes do Jogo</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+  <link rel="stylesheet" href="../static/css/detalhes.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="../static/img/LOGO.png" alt="Atma Games" height="50">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="perfil.html">Perfil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contato</a>
+          </li>
+        </ul>
+        <form class="form-inline" id="form-pesquisa">
+          <input class="form-control mr-sm-2" type="search" name="search" placeholder="Buscar jogos..." aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <a href="login.html" id="login-icon" class="ml-3">
+          <img src="../static/img/login-de-usuario.png" alt="Login" height="30">
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mt-5">
+    <div class="row">
+      <div id="game-details" class="col-md-8">
+        <!-- Detalhes do jogo serão inseridos aqui -->
+      </div>
+      <aside class="col-md-4">
+        <h3>Outros Jogos da Categoria</h3>
+        <div id="related-games" class="list-group">
+          <!-- Jogos relacionados serão inseridos aqui -->
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer id="footer" class="bg-dark text-white mt-5 p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Sobre</h5>
+          <p>CNPJ: 123.456.789/0001-00</p>
+          <p>Endereço: Av. Principal, 1234</p>
+          <p>Telefone: (11) 1234-5678</p>
+          <p>Email: contato@atma.com</p>
+          <p>WhatsApp: (11) 98765-4321</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Redes Sociais</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Facebook</a></li>
+            <li><a href="#" class="text-white">Instagram</a></li>
+            <li><a href="#" class="text-white">Twitter</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Empresa Parceira</h5>
+          <p>Turnover RH</p>
+          <p>Telefone: (11) 1111-2222</p>
+          <p>Email: rh@turnover.com</p>
+          <img src="../static/img/logo_Turnover_branco.png" alt="Logo Turnover" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../static/javascript/script.js"></script>
+  <script src="../static/javascript/detalhes.js"></script>
+</body>
+</html>

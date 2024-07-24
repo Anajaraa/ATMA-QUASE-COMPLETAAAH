@@ -1,0 +1,107 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o main */
+main .section-title h2 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+main .banner {
+    margin-bottom: 40px;
+}
+
+main .carousel-inner img {
+    height: 500px;
+    width: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+main .destaques .card {
+    background-color: #1f1f1f;
+    border: none;
+}
+
+main .destaques .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+main .destaques .card-title {
+    color: #03cc5e;
+}
+
+main .destaques .card-text {
+    color: #bbb;
+}
+
+main .destaques .preco {
+    font-size: 1.2em;
+    color: #03cc5e;
+}
+
+main .destaques .btn-success {
+    background-color: #03cc5e;
+    border: none;
+}
+
+main .destaques .btn-success:hover {
+    background-color: #029c46;
+}
+
+/* Estilo para o footer */
+footer {
+    background-color: #1f1f1f;
+}
+
+footer h5 {
+    color: #03cc5e;
+}
+
+footer a {
+    color: #03cc5e;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Estilo para resultados da pesquisa */
+#resultados-pesquisa .card {
+    background-color: #1f1f1f;
+    border: none;
+}
+
+#resultados-pesquisa .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#resultados-pesquisa .card-title {
+    color: #03cc5e;
+}
+
+#resultados-pesquisa .card-text {
+    color: #bbb;
+}
+
+#resultados-pesquisa .preco {
+    font-size: 1.2em;
+    color: #03cc5e;
+}
+
+#resultados-pesquisa .btn-success {
+    background-color: #03cc5e;
+    border: none;
+}
+
+#resultados-pesquisa .btn-success:hover {
+    background-color: #029c46;
+}

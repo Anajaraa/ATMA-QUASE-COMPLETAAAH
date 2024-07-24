@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Jogos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/root.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="banner-top">
+          <img src="../static/img/BANNER2.jpg" alt="Banner Topo">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">
+            <img src="../static/img/LOGO.png" alt="Atma Games" height="50">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="http://localhost:8080/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8080/catalogo">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8080/perfil">Perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:8080/adm">Admin</a>
+              </li>
+            </ul>
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Buscar jogos..." aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+          </div>
+        </nav>
+      </header>
+    <main>
+        <section id="catalogo">
+            <h2>Jogos Disponíveis</h2>
+            <div class="jogos-container">
+                <h1>Catálogo de Jogos</h1>
+        <div id="games-list">
+            <!-- Lista de jogos será inserida aqui dinamicamente -->
+        </div>
+                <!-- Jogos serão carregados aqui -->
+            </div>
+            <button id="adicionar-jogo">Adicionar Jogo</button>
+            <div id="form-adicionar" style="display:none;">
+                <h3>Adicionar Novo Jogo</h3>
+                <form id="form-jogo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="descricao">Descrição:</label>
+                    <textarea id="descricao" name="descricao" required></textarea>
+                    <label for="preco">Preço:</label>
+                    <input type="number" id="preco" name="preco" required>
+                    <label for="desenvolvedor">Desenvolvedor:</label>
+                    <input type="text" id="desenvolvedor" name="desenvolvedor" required>
+                    <label for="dataLancamento">Data de Lançamento:</label>
+                    <input type="date" id="dataLancamento" name="dataLancamento" required>
+                    <button type="submit">Adicionar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="bg-dark text-white mt-5 p-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5>Sobre</h5>
+              <p>CNPJ: 123.456.789/0001-00</p>
+              <p>Endereço: Av. Principal, 1234</p>
+              <p>Telefone: (11) 1234-5678</p>
+              <p>Email: contato@atma.com</p>
+              <p>WhatsApp: (11) 98765-4321</p>
+            </div>
+            <div class="col-md-4">
+              <h5>Redes Sociais</h5>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Facebook</a></li>
+                <li><a href="#" class="text-white">Instagram</a></li>
+                <li><a href="#" class="text-white">Twitter</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h5>Empresa Parceira</h5>
+              <p>Turnover RH</p>
+              <p>Telefone: (11) 1111-2222</p>
+              <p>Email: rh@turnover.com</p>
+              <img src="../static/img/logo_Turnover_branco.png" alt="Logo Turnover" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../static/javascript/catalogo.js"></script>
+</body>
+</html>

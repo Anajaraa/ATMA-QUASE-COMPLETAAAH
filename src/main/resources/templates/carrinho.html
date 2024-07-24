@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/carrinho.css">
+</head>
+<body>
+    <header>
+        <div class="banner-top">
+            <img src="../img/BANNER2.jpg" alt="Banner Topo">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="../img/LOGO.png" alt="Atma Games" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../HTML/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/catalogo.html">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/perfil.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../HTML/adm.html">Admin</a>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar jogos..." aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="cart-container">
+            <h2>Seu Carrinho</h2>
+            <div id="cartItems">
+                <!-- Exemplo de item no carrinho -->
+                <div class="cart-item">
+                    <img src="../img/game_default.jpg" alt="Game Image">
+                    <div class="item-details">
+                        <h4>Game Fictício</h4>
+                        <p>Preço: R$50,00</p>
+                    </div>
+                    <button class="remover-item" data-id="1">Remover</button>
+                </div>
+            </div>
+            <div id="cartTotal">
+                <h3>Total: R$50,00</h3>
+            </div>
+            <button id="continuar-comprando">Continuar Comprando</button>
+            <button id="ir-para-pagamento">Ir para Pagamento</button>
+        </div>
+    </main>
+    <footer id="footer" class="bg-dark text-white mt-5 p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre</h5>
+                    <p>CNPJ: 123.456.789/0001-00</p>
+                    <p>Endereço: Av. Principal, 1234</p>
+                    <p>Telefone: (11) 1234-5678</p>
+                    <p>Email: contato@atma.com</p>
+                    <p>WhatsApp: (11) 98765-4321</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Facebook</a></li>
+                        <li><a href="#" class="text-white">Instagram</a></li>
+                        <li><a href="#" class="text-white">Twitter</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Empresa Parceira</h5>
+                    <p>Turnover RH</p>
+                    <p>Telefone: (11) 1111-2222</p>
+                    <p>Email: rh@turnover.com</p>
+                    <img src="../img/logo_Turnover_branco.png" alt="Logo Turnover" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/carrinho.js"></script>
+    <script src="../JAVASCRIPT/carrinho.js"></script>
+</body>
+</html>

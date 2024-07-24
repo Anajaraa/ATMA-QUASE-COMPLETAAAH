@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Administração</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/adm.css">
+</head>
+<body>
+  <header>
+    <h1>Painel de Administração</h1>
+    <nav>
+      <a href="#manageGames">Gerenciamento de Jogos</a>
+      <a href="#manageOrders">Gerenciamento de Pedidos</a>
+      <a href="#manageUsers">Gerenciamento de Usuários</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Gerenciamento de Jogos -->
+    <section id="manageGames" class="admin-section">
+      <h2>Gerenciamento de Jogos</h2>
+
+      <div class="game-form-container">
+        <h3>Criar/Editar Jogo</h3>
+        <form id="gameForm">
+          <label for="gameName">Nome:</label>
+          <input type="text" id="gameName" name="gameName" required>
+
+          <label for="gameDescription">Descrição:</label>
+          <textarea id="gameDescription" name="gameDescription" required></textarea>
+
+          <label for="gamePrice">Preço:</label>
+          <input type="number" id="gamePrice" name="gamePrice" step="0.01" required>
+
+          <label for="gameDeveloper">Desenvolvedor:</label>
+          <input type="text" id="gameDeveloper" name="gameDeveloper" required>
+
+          <label for="gameReleaseDate">Data de Lançamento:</label>
+          <input type="date" id="gameReleaseDate" name="gameReleaseDate" required>
+          
+          <label for="gameImageUrl">URL da Imagem:</label>
+          <input type="url" id="gameImageUrl" name="gameImageUrl" required>
+
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+
+      <div class="games-list">
+        <h3>Lista de Jogos</h3>
+        <table id="gamesTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Descrição</th>
+              <th>Preço</th>
+              <th>Desenvolvedor</th>
+              <th>Data de Lançamento</th>
+              <th>Imagem</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Jogos serão carregados aqui via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Gerenciamento de Pedidos -->
+    <section id="manageOrders" class="admin-section">
+      <h2>Gerenciamento de Pedidos</h2>
+
+      <input type="text" id="searchOrders" placeholder="Pesquisar pedidos por usuário" oninput="searchOrders()">
+
+      <div class="orders-list">
+        <h3>Histórico de Pedidos</h3>
+        <table id="ordersTable">
+          <thead>
+            <tr>
+              <th>ID do Pedido</th>
+              <th>Usuário</th>
+              <th>Data do Pedido</th>
+              <th>Status</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Pedidos serão carregados aqui via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="order-details" id="orderDetails">
+        <!-- Detalhes do pedido serão exibidos aqui -->
+      </div>
+    </section>
+
+    <!-- Gerenciamento de Usuários -->
+    <section id="manageUsers" class="admin-section">
+      <h2>Gerenciamento de Usuários</h2>
+
+      <input type="text" id="searchUsers" placeholder="Pesquisar usuários por nome ou email" oninput="searchUsers()">
+
+      <div class="users-list">
+        <h3>Lista de Usuários</h3>
+        <table id="usersTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nome</th>
+              <th>Email</th>
+              <th>Data de Registro</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Usuários serão carregados aqui via JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="user-form-container">
+        <h3>Criar/Editar Usuário</h3>
+        <form id="userForm">
+          <label for="userName">Nome:</label>
+          <input type="text" id="userName" name="userName" required>
+
+          <label for="userEmail">Email:</label>
+          <input type="email" id="userEmail" name="userEmail" required>
+
+          <label for="userPassword">Senha:</label>
+          <input type="password" id="userPassword" name="userPassword" required>
+
+          <button type="submit">Salvar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+      <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <h5>Sobre</h5>
+                <p>CNPJ: 123.456.789/0001-00</p>
+                <p>Endereço: Av. Principal, 1234</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Email: contato@atma.com</p>
+                <p>WhatsApp: (11) 98765-4321</p>
+              </div>
+              <div class="col-md-4">
+                <h5>Redes Sociais</h5>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="text-white">Facebook</a></li>
+                  <li><a href="#" class="text-white">Instagram</a></li>
+                  <li><a href="#" class="text-white">Twitter</a></li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h5>Empresa Parceira</h5>
+                <p>Turnover RH</p>
+                <p>Telefone: (11) 1111-2222</p>
+                <p>Email: rh@turnover.com</p>
+                <img src="../img/logo_Turnover_branco.png" alt="Logo Turnover" class="img-fluid">
+              </div>
+            </div>
+          </div>
+  </footer>
+
+  <script src="../JS/admin.js" defer></script>
+
+</body>
+</html>

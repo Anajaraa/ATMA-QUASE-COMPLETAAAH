@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/cadastro.css">
+    <title>Login e Cadastro</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="../static/img/LOGO.png" alt="Atma Games" height="50">
+            </a>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Login e Cadastro</h1>
+        <div class="form-container">
+            <form id="registerForm" class="form-box">
+                <h2>Cadastro</h2>
+                <input type="text" id="name" name="name" placeholder="Nome" required>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                <input type="password" id="password" name="password" placeholder="Senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <form id="loginForm" class="form-box">
+                <h2>Login</h2>
+                <input type="email" id="loginEmail" name="email" placeholder="E-mail" required>
+                <input type="password" id="loginPassword" name="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="pwa-container">
+        <iframe src="https://bsehovac.github.io/the-cube/" width="100%" height="500"></iframe>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h5>Sobre</h5>
+                <p>CNPJ: 123.456.789/0001-00</p>
+                <p>Endereço: Av. Principal, 1234</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Email: contato@atma.com</p>
+                <p>WhatsApp: (11) 98765-4321</p>
+            </div>
+            <div class="footer-section social-media">
+                <h5>Redes Sociais</h5>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="footer-section contact">
+                <h5>Empresa Parceira</h5>
+                <p>Turnover RH</p>
+                <p>Telefone: (11) 1111-2222</p>
+                <p>Email: rh@turnover.com</p>
+                <img src="../static/img/logo_Turnover_branco.png" alt="Logo Turnover" class="img-fluid">
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="../static/javascript/adm.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+body {
+      font-family: Arial, sans-serif;
+      color: #fff;
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    header h1 {
+      margin: 0;
+    }
+    
+    nav a {
+      color: #03cc5e;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    .admin-section {
+      margin-bottom: 40px;
+    }
+    
+    .game-form-container, .user-form-container {
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    .game-form-container form, .user-form-container form {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .game-form-container form label, .user-form-container form label {
+      margin-bottom: 5px;
+    }
+    
+    .game-form-container form input, .game-form-container form textarea, .user-form-container form input {
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+    }
+    
+    .game-form-container form textarea {
+      resize: vertical;
+    }
+    
+    .game-form-container form button, .user-form-container form button {
+      padding: 10px 20px;
+      background-color: #03cc5e;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .game-form-container form button:hover, .user-form-container form button:hover {
+      background-color: #029c46;
+    }
+    
+    .games-list, .orders-list, .users-list {
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    
+    #gamesTable, #ordersTable, #usersTable {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    #gamesTable th, #ordersTable th, #usersTable th,
+    #gamesTable td, #ordersTable td, #usersTable td {
+      padding: 10px;
+      text-align: left;
+    }
+    
+    #gamesTable th, #ordersTable th, #usersTable th {
+      background-color: #333;
+    }
+    
+    #gamesTable tr:nth-child(even), #ordersTable tr:nth-child(even), #usersTable tr:nth-child(even) {
+      background-color: #222;
+    }
+    
+    #gamesTable td a, #ordersTable td a, #usersTable td a {
+      color: #03cc5e;
+      text-decoration: none;
+    }
+    
+    #gamesTable td a:hover, #ordersTable td a:hover, #usersTable td a:hover {
+      text-decoration: underline;
+    }
+    
+    .order-details {
+      background-color: #1f1f1f;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    
+    .order-details h3 {
+      color: #ff7f30;
+    }
+    
+    footer {
+      background-color: #1f1f1f;
+    }
+    
+    footer h5 {
+      color: #03cc5e;
+    }
+    
+    footer a {
+      color: #03cc5e;
+    }
+    
+    footer a:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+    

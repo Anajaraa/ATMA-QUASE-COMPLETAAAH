@@ -1,0 +1,166 @@
+﻿/* Produtos.css */
+
+/* Estilização geral do corpo */
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para o header e nav */
+  header .banner-top img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  nav .navbar {
+    padding: 10px 20px;
+  }
+  
+  nav .navbar-brand img {
+    height: 50px;
+  }
+  
+  nav .form-inline .form-control {
+    background-color: #1f1f1f;
+    color: #fff;
+    border: 1px solid #333;
+  }
+  
+  nav .form-inline .btn-outline-success {
+    color: #03cc5e;
+    border-color: #03cc5e;
+  }
+  
+  nav .form-inline .btn-outline-success:hover {
+    background-color: #03cc5e;
+    color: #fff;
+  }
+  
+/* CARROSSEL DE JOGOS POR CATEGORIA */
+.container-categorias {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px; /* Ajuste para garantir que o carrossel não sobreponha o footer */
+}
+
+.carousel-inner {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+h2 {
+    margin-top: 70px;
+    color: aliceblue;
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto; /* Ajuste para permitir que a altura se adapte ao conteúdo */
+    transition: transform 0.5s ease;
+}
+
+.carousel-item.active {
+    display: flex;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+/* Posicionamento das setas */
+.carousel-navigation {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 2%;
+    position: absolute;
+    margin-bottom: 100px;
+}
+
+.carousel-control-prev {
+    left: -2.5%; /* Ajuste conforme necessário */
+}
+
+.carousel-control-next {
+    right: -2.5%; /* Ajuste conforme necessário */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Cards do carrossel */
+.card {
+    width: 226px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.card-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #03cc5e;
+}
+
+.card-category {
+    font-size: 16px;
+    color: #ffcc00;
+}
+
+ 
+footer {
+    background-color: #1f1f1f;
+  }
+  
+  footer h5 {
+    color: #03cc5e;
+  }
+  
+  footer a {
+    color: #03cc5e;
+  }
+  
+  footer a:hover {
+    text-decoration: none;
+    color: #fff;
+  }
